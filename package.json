@@ -8,6 +8,10 @@
         "provider",
         "context"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/trevonerd/react-scroll-provider.git"
+    },
     "main": "lib/ScrollProvider.js",
     "license": "MIT",
     "dependencies": {
