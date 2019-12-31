@@ -1,0 +1,9 @@
+.ScrollPosition {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  height: 30px;
+  line-height: 30px;
+  width: 50px;
+  background-color: lime;
+}
