@@ -1,27 +1,41 @@
 {
-  "name": "scroll-provider",
-  "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.js",
-  "dependencies": {
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-scripts": "3.0.1"
-  },
-  "devDependencies": {
-    "typescript": "3.3.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "name": "scroll-provider",
+    "version": "0.0.1",
+    "description": "React component that passes scrolling data through the component tree.",
+    "keywords": [
+        "react",
+        "scroll",
+        "provider",
+        "context"
+    ],
+    "main": "lib/ScrollProvider.js",
+    "license": "MIT",
+    "dependencies": {
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.3.2",
+        "@testing-library/user-event": "^7.1.2",
+        "react": "16.12.0",
+        "react-dom": "16.12.0",
+        "react-scripts": "3.3.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "babel src/ScrollProvider.js -d lib",
+        "test": "CI=true react-scripts test --env=jsdom",
+        "test:watch": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject",
+        "prepublishOnly": "yarn build"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ],
+    "devDependencies": {
+        "@babel/cli": "^7.7.7",
+        "@babel/core": "^7.7.7",
+        "@babel/preset-env": "^7.7.7",
+        "@babel/preset-react": "^7.7.4"
+    }
 }
