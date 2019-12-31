@@ -1,6 +1,6 @@
 {
     "name": "scroll-provider",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "React component that passes scrolling data through the component tree.",
     "keywords": [
         "react",
@@ -37,5 +37,8 @@
         "@babel/core": "^7.7.7",
         "@babel/preset-env": "^7.7.7",
         "@babel/preset-react": "^7.7.4"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
