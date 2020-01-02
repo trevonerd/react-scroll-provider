@@ -37,7 +37,7 @@ import ScrollProvider from 'scroll-provider'
 ```jsx
 <ScrollProvider>
   <div className="App">
-   <!-- app content -->
+   ...app content...
   </div>
 </ScrollProvider>
 ```
@@ -45,7 +45,7 @@ import ScrollProvider from 'scroll-provider'
 * Now all components have access to the scroll information
 
 
-1. Hook
+1. You can use `useContext` hook
 ```jsx
 import React, { useContext } from "react";
 import { ScrollContext } from "../ScrollProvider";
@@ -63,7 +63,7 @@ const Component = () => {
 export default Component;
 ```
 
-2. Context API
+2. or the Context API
 ```jsx
 import React from "react";
 import { ScrollContext } from "../ScrollProvider";
