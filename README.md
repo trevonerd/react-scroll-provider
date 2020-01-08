@@ -78,5 +78,5 @@ const Component = () => (
   </ScrollsContext.Consumer>
 );
 
-export default ScrollPosition;
+export default Component;
 ```
